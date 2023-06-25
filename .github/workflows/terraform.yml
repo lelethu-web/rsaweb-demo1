@@ -3,6 +3,9 @@ name: "Deploy"
 on: 
   push:
       branches: ["main"]
+
+    permissions:
+        issues: read-all      
 jobs:
   terraform:
       name: "Terraform"
