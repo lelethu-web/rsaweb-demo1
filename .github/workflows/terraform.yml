@@ -16,11 +16,11 @@ jobs:
 
       steps:
           - name: checkout
-            uses: action/checkout@v1
+            uses: hashicorp/setup-terraform@v2
 
 
           - name: Terraform init
-            uses: hashicorp/terraform-github-action@master
+            uses: hashicorp/setup-terraform@v2
             with:
               tf_actions_version: 0.14.3
               tf_actions_subcommand: "init"
